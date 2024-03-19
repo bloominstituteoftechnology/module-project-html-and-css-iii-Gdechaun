@@ -54,22 +54,118 @@
     Work through the tasks until the boxes match the `task-1.png` design inside the `design` folder.
     Making changes to the HTML is not allowed! The tasks must be completed using CSS alone.
     */
+    
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    div#flexContainer1{
+      display: flex;
+      justify-content: space-evenly;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
 
+    div#flexContainer2{
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    div#flexContainer3{
+      display: flex;
+      flex-direction: column-reverse ;
+      align-items: flex-end;    
+      justify-content: flex-end;
+    }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    div#flexContainer4{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;    
+      
+    }
+
+    #flexContainer4 .flexItem:nth-child(1) {
+      order: 2
+    }
+    #flexContainer4 .flexItem:nth-child(2) {
+      order: 3;
+    }
+
+    #flexContainer4 .flexItem:nth-child(3) {
+      order: 1;
+    }
+
 
     /* 👉 Task 5 - [HINT] research align-self */
+    div#flexContainer5{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly
+     }
+
+     #flexContainer5 .flexItem:nth-child(2){
+      align-self:center ;
+     }
+     
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    div#flexContainer6{
+      display:flex;
+      align-items: flex-end; /*makes the containers drop to bottom*/
+
+    }
+
+    #flexContainer6 .flexItem:nth-child(1){
+      order:3;
+      justify-content: flex-end;
+
+    }
+    #flexContainer6 .flexItem:nth-child(2){
+      order:2;
+      align-items:flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(3){
+      order: 1;
+      align-self: flex-start; /*makes the containers go to top left*/
+    }
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    div#flexContainer7{
+      display: flex;
+    }
+    
+
+    #flexContainer7 .flexItem:nth-child(2){
+      flex-grow:2 ;
+
+    }
+
+    #flexContainer7 .flexItem:nth-child(3){
+      flex-grow:3 ;
+
+    }
+
 
     /* 👉 Task 8 - [HINT] you got this! */
+    div#flexContainer8{
+      display: flex;
+      justify-content: space-between;
+    }
+    #flexContainer8 .flexItem:nth-child(1){
+      align-self: flex-start;
+      justify-content: flex-end;
+    }
+    #flexContainer8 .flexItem:nth-child(2){
+      align-self: center;
+    }
+    #flexContainer8 .flexItem:nth-child(3){
+    align-self: flex-end;
+    justify-content:flex-start
+    }
 
 
     /*
